@@ -25,4 +25,5 @@ public interface CommandeDAO {
     int prixplat(int idplat);
     int idcommande(String cinclient,Date datecommande);
     String nomplat(int idplat);
+    String chercherAdresse(String email);
 }

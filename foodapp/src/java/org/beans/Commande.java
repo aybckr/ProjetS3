@@ -17,7 +17,26 @@ public class Commande {
     private Date dateCommande;
     private Date dateLivraison;
     private int total;
+    private String cinlivreur;
+    private Date datelivreur;
+    
     public Commande() {
+    }
+
+    public String getCinlivreur() {
+        return cinlivreur;
+    }
+
+    public void setCinlivreur(String cinlivreur) {
+        this.cinlivreur = cinlivreur;
+    }
+
+    public Date getDatelivreur() {
+        return datelivreur;
+    }
+
+    public void setDatelivreur(Date datelivreur) {
+        this.datelivreur = datelivreur;
     }
 
     public int getTotal() {

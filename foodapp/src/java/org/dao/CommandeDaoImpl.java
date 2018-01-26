@@ -62,7 +62,7 @@ public class CommandeDaoImpl implements CommandeDAO{
     try{
         connexion = daoFactory.getConnection();
         statement = connexion.createStatement();
-        rs = statement.executeQuery("select idplat,plat.idrestau as idrestau,categoryplat,prix,restau.nomrestau as nomrestau,nomplat from plat,restau where plat.idrestau=restau.idrestau and restau.nomrestau='"+nomRestau+"' and categoryplat!='absent'");
+        rs = statement.executeQuery("select plat.idplat,plat.idrestau as idrestau,categoryplat,plat.prix,restau.nomrestau as nomrestau,plat.nomplat as nomplat from plat,restau where plat.idrestau=restau.idrestau and restau.nomrestau='"+nomRestau+"' and plat.categoryplat!='absent'");
         //heritage = initialisationRequetePreparee( connexion, "select idplat,plat.idrestau as idrestau,categoryplat,prix,restau.nomrestau as nomrestau,nomplat from plat,restau where plat.idrestau=restau.idrestau and plat.categoryplat='?' and restau.nomrestau='?'",true,categoryPlat,nomRestau);
         //rs= heritage.executeQuery();
         
@@ -168,4 +168,26 @@ public class CommandeDaoImpl implements CommandeDAO{
     }
     return nomplat;
     }
+
+    @Override
+    public String chercherAdresse(String email) {
+        String adresse=null;
+        try{
+    
+    Class.forName("org.apache.derby.jdbc.ClientDriver").newInstance();
+   
+
+
+    Connection con = DriverManager.getConnection("jdbc:derby://localhost:1527/FoodApp","hajar","hajar");
+    Statement st = con.createStatement();
+    String query = "select * from compte where email='"+email+"'";
+    ResultSet rs = st.executeQuery(query);
+    
+    while(rs.next()){
+        adresse=rs.getString("adresse");      
+    }
+    }catch(Exception e){
+            
+            }
+    return adresse;}
 }

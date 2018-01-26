@@ -49,7 +49,11 @@ public class chercherCommande extends HttpServlet {
         String nomrestau=request.getParameter("nomrestau");
         List<Plat> plats = new ArrayList<Plat>();
         plats= compteDao.chercherCommande( nomrestau);
+        String email=request.getParameter("email");
+        String adresse=compteDao.chercherAdresse(email);
         
+        request.setAttribute("adresse", adresse);
+        request.setAttribute("plats", plats);
         request.getRequestDispatcher("plats.jsp").forward(request, response);
         }
         catch(Exception e){

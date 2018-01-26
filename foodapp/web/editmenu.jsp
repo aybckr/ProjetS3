@@ -101,6 +101,10 @@ try{
     Statement st = con.createStatement();
     String query = "select * from plat,restau,gerantrestau,compte where plat.idrestau=restau.idrestau and restau.cinrestau=gerantrestau.cinrestau=compte.cin and compte.email='"+mail+"' and plat.categoryplat!='absent'";
     ResultSet rs = st.executeQuery(query);
+    
+    Statement stt = con.createStatement();
+    String restau="select restau.idrestau from restau,gerantrestau,compte where restau.cinrestau=gerantrestau.cinrestau=compte.cin and compte.email='"+mail+"'";
+    ResultSet rr=stt.executeQuery(restau);
         %>
     </br></br><center><h4>VOTRE MENU: </h4></br><div class='divatt'>ATTENTION: La supression d'un plat est irreversible</div></br>
     <div class="divstyle">
@@ -108,20 +112,23 @@ try{
          <table>
         <tr>
             <th hidden="" >mail gerant</th>
-            <th hidden="" >ID du restau</th>
+            
             <th hidden="" >ID du plat</th>
            <th>Nom du plat</th>
             <th>Prix plat</th>
             <th>Supprimer plat</th>
        </tr>
     <%int idrestau=0;
+    
+    while(rr.next()){
+        idrestau=Integer.parseInt(rr.getString("idrestau"));
+    }
         while(rs.next()){
-      idrestau=Integer.parseInt(rs.getString("idrestau"));
+      
       %>
        <tr>
            <form method="post" action="deletePlat">
             <td hidden=""><input type="email"  name="email" value="<%=mail%>" /></td>    
-            <td hidden=""><input type="number"  name="idrestau" value="<%=Integer.parseInt(rs.getString("idrestau"))%>" /></td> 
             <td hidden=""><input type="number"  name="idplat" value="<%=Integer.parseInt(rs.getString("idplat"))%>" /></td>   
            <td><input type="text"  name="nomplat" value="<%=rs.getString("nomplat")%>"/></td>
            <td><input type="number"  name="prixplat" value="<%=Integer.parseInt(rs.getString("prix"))%>"/></td>

@@ -229,17 +229,17 @@
                         </nav>
                     </div>
                 </div>
-        </header></br></br></br></br>
+        </header></br></br></br>
         
-        </br>
+        </br><center><h4>Chercher le menu de votre restaurant préféré!</h4></center>
         
 
         <section class="webdesigntuts-workshop">
-            <center><h4>Chercher le menu de votre restaurant préféré!</h4></center>
+            
             <form action="chercherCommande" method="get">		    
                 
                   <input type="search" name="nomrestau" placeholder="Restaurant" class="form-control"> 		    	
-                <button>Rechercher</button>
+                  <button type="submit">Rechercher</button>
             </form>
         </section>
     </body>

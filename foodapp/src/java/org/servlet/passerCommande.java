@@ -67,6 +67,7 @@ public class passerCommande extends HttpServlet {
         compteDao.ajouterCommande(commande);
         commande.setIdCommande(compteDao.idcommande(cin, aujourdhui));
         
+        
             int[] verifqt =new int[idPlat.length];
             int[] verify2 = new int[idPlat.length];
         int total=0;    

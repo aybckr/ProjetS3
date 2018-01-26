@@ -120,12 +120,13 @@
                                     
                                 </div><!-- /.navbar-collapse -->
                             </div><!-- /.container-fluid -->
+                            
                         </nav>
                     </div>
                 </div>
             </div>	
         </header> <!-- End Header Section -->
-        
+        </br></br>
         <section id="slider" class="slider">
             <div class="slider_overlay">
                 <div class="container">
@@ -133,7 +134,7 @@
                         <div class="main_slider text-center">
                             <div class="col-md-12">
                                 
-                                <div></br><a font color="white">Adresse email ou mot de passe incorrecte. Ressayer!!</a></div>
+                                <div><a >Adresse email ou mot de passe incorrecte. Ressayer ou contacter l'admin pour changer votre mdp!!</a></div>
         
                                 <div class="main_slider_content wow zoomIn" data-wow-duration="1s">
                                     
@@ -178,126 +179,7 @@
 
 
 
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="portfolio_content text-center  wow fadeIn" data-wow-duration="5s">
-                        <div class="col-md-12">
-                            <div class="head_title text-center">
-                                <h4>Nos plats proposés</h4>
-                            </div>
-
-                            <div class="main_portfolio_content">
-                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="assets/images/p1.png" alt="" />
-                                    <div class="portfolio_images_overlay text-center">
-                                        <h6>Fan Du Pepperoni</h6>
-                                        <h6>Pizza Hut</h6>
-                                        <p class="product_price">12DH</p>
-                                        <a href="" class="btn btn-primary">Click here</a>
-                                    </div>
-                                </div>
-                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="assets/images/p2.png" alt="" />
-                                    <div class="portfolio_images_overlay text-center">
-                                        <h6>Big Tasty</h6>
-                                        <h6>Mcdonald's</h6>
-                                        <p class="product_price">25DH</p>
-                                        <a href="" class="btn btn-primary">Click here</a>
-                                    </div>								
-                                </div>
-                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="assets/images/p1.png" alt="" />
-                                    <div class="portfolio_images_overlay text-center">
-                                        <h6>Fan Du Pepperoni</h6>
-                                        <h6>Pizza Hut</h6>
-                                        <p class="product_price">12DH</p>
-                                        <a href="" class="btn btn-primary">Click here</a>
-                                    </div>								
-                                </div>
-                                <div class="col-md-3 col-sm-4 col-xs-6 single_portfolio_text">
-                                    <img src="assets/images/p1.png" alt="" />
-                                    <div class="portfolio_images_overlay text-center">
-                                        <h6>Fan Du Pepperoni</h6>
-                                        <h6>Pizza Hut</h6>
-                                        <p class="product_price">12DH</p>
-                                        <a href="" class="btn btn-primary">Click here</a>
-                                    </div>								
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="ourPakeg" class="ourPakeg">
-            <div class="container">
-                <div class="main_pakeg_content">
-                    <div class="row">
-                        <div class="head_title text-center">
-                            <h4>Quelques Menus</h4>
-
-                        </div>
-
-                        <div class="single_pakeg_one text-right wow rotateInDownRight">
-                            <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4">
-                                <div class="single_pakeg_text">
-                                    <div class="pakeg_title">
-                                        <h4>Pizza Hut</h4>
-                                    </div>
-
-                                    <ul>
-                                        <li> Pizza........................................................24.5 DH</li>
-                                        <li> Pizza........................................................24.5 DH</li>
-                                        <li> Pizza........................................................24.5 DH</li>
-                                        <li> Pizza........................................................24.5 DH</li>
-                                        <li> Pizza........................................................24.5 DH</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="single_pakeg_two text-left wow rotateInDownLeft">
-                            <div class="col-md-6 col-sm-8">
-                                <div class="single_pakeg_text">
-                                    <div class="pakeg_title">
-                                        <h4>Pinchos </h4>
-                                    </div>
-
-                                    <ul>
-                                        <li> Lasagne........................................................50 DH </li>
-                                        <li> Lasagne........................................................50 DH </li>
-                                        <li> Lasagne........................................................50 DH </li>
-                                        <li> Lasagne........................................................50 DH </li>
-                                        <li> Lasagne........................................................50 DH </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="single_pakeg_three text-left wow rotateInDownRight">
-                            <div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4">
-                                <div class="single_pakeg_text">
-                                    <div class="pakeg_title">
-                                        <h4>Abtal</h4>
-                                    </div>
-
-                                    <ul>
-                                        <li> Cake glacé........................................................24.5 DH </li>
-                                        <li> Cake glacé........................................................24.5 DH </li>
-                                        <li> Cake glacé........................................................24.5 DH </li>
-                                        <li> Cake glacé........................................................24.5 DH </li>
-                                        <li> Cake glacé........................................................24.5 DH </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+       
 
 
         <section id="footer_widget" class="footer_widget">

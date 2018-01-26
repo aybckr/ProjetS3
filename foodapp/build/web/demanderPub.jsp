@@ -64,7 +64,7 @@
     <center><h4>Envoyer un email maintenant pour diffuser votre PUB!</h4></center>
     </br>
 
-    <center><form action = "Uploadpub" method = "post" enctype = "multipart/form-data">
+    <center><form action = "" method = "post" enctype = "multipart/form-data">
         <div class="form-group">
             <input type="text" class="form-control" name="restau" placeholder="Restaurant" required="">
         </div>
@@ -80,7 +80,7 @@
         </div>
         <div class="form-group">
             <input type = "file"   class="inputfile" name = "pub" placeholder="Deposer votre Pub en photo" required="" size = "50" />
-            <label for="file">Entrer votre PUB en photo</label>
+            
         </div>
             Un email sera envoyé à l'Admin du site, Vous receverez la reponse en email.
         <div class="form-group">

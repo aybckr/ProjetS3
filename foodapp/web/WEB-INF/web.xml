@@ -24,6 +24,38 @@
         <servlet-name>addPlat</servlet-name>
         <servlet-class>org.servlet.addPlat</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>deleteUser</servlet-name>
+        <servlet-class>org.servlet.deleteUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>addUser</servlet-name>
+        <servlet-class>org.servlet.addUser</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>chercherCommandeoff</servlet-name>
+        <servlet-class>org.servlet.chercherCommandeoff</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>affecter</servlet-name>
+        <servlet-class>org.servlet.affecter</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>livreurs</servlet-name>
+        <servlet-class>org.servlet.livreurs</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>commandeAffectee</servlet-name>
+        <servlet-class>org.servlet.commandeAffectee</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>showHisDelivery</servlet-name>
+        <servlet-class>org.servlet.showHisDelivery</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>livree</servlet-name>
+        <servlet-class>org.servlet.livree</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Compteserv</servlet-name>
         <url-pattern>/Compteserv</url-pattern>
@@ -47,6 +79,38 @@
     <servlet-mapping>
         <servlet-name>addPlat</servlet-name>
         <url-pattern>/addPlat</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>deleteUser</servlet-name>
+        <url-pattern>/deleteUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>addUser</servlet-name>
+        <url-pattern>/addUser</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>chercherCommandeoff</servlet-name>
+        <url-pattern>/chercherCommandeoff</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>affecter</servlet-name>
+        <url-pattern>/affecter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>livreurs</servlet-name>
+        <url-pattern>/livreurs</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>commandeAffectee</servlet-name>
+        <url-pattern>/commandeAffectee</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>showHisDelivery</servlet-name>
+        <url-pattern>/showHisDelivery</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>livree</servlet-name>
+        <url-pattern>/livree</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

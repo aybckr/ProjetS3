@@ -80,7 +80,7 @@ public class addPlat extends HttpServlet {
     String nomplat=request.getParameter("nomplat");
     String email=request.getParameter("email");
     int prix=Integer.parseInt(request.getParameter("prix"));
-    String query = "insert into plat (idrestau,nomplat,categoryplat,prix) values (1,'"+nomplat+"','',"+prix+")";
+    String query = "insert into plat (idrestau,nomplat,categoryplat,prix) values ("+idrestau+",'"+nomplat+"','dispo',"+prix+")";
     int i = st.executeUpdate(query);
     
     request.getRequestDispatcher("editmenu.jsp?email="+email).forward(request, response);

@@ -4,6 +4,9 @@
     Author     : Hajar
 --%>
 
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.Connection"%>
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
 <%@page import="org.beans.Plat"%>
@@ -61,11 +64,11 @@ th {
     </head>
     <body>
        </br></br></br>
-    <center> <h4>Resultat pour <%=request.getParameter("nomrestau")%> </h4></center>
+    <center> <h4>Resultat pour <%=request.getParameter("nomrestau")%> </h4>
 
 </br></br>
         
-            
+          
             <form action="passerCommande" method="post">
         <table>
        <tr>
@@ -87,16 +90,17 @@ th {
         </tr></br>
     </c:forEach>
         
-        </table></br></br>
-        <table>
+        
             <tr>
-            <th>Adresse: </th>
-            <td>
-                <textarea class="form-control" name="adresse" rows="1" required="" placeholder="Ajouter votre adresse"></textarea>
+                <td></td>
+                <td></td>
+              <td>      N'oublier pas de s'assurer de votre adresse
+
+                         
             </td>
         </tr>
         </table></br>
-        <center><input type="submit" value="Commander" class="btn btn-primary"/></center>
+        <input type="submit" value="Commander" class="btn btn-primary"/></center>
             </form>    
 </body>
 </html>

@@ -98,16 +98,30 @@ String email=request.getParameter("email");
                                         <% if(type.equals("client")){%>
                                         <li><a href="commander.jsp?email=<%=email%>">Commander</a></li>                                  
                                         <li><a href="reserver.jsp?email=<%=email%>">Reserver Table</a></li>
+                                        <li><a href="#contact">Contacter-nous</a></li>
+                                        <li><a href="editprofle.jsp?email=<%=email%>">Profil</a></li>
                                         
                                          <%}%>
                                         <% if(type.equals("gerant")){%>
                                         <li><a href="demanderPub.jsp?email=<%=email%>">Demander PUB</a></li>
-                                        <li><a href="editmenu.jsp?email=<%=email%>">Mon Menu</a></li><%}%>
-                                        <% if(type.equals("livreur")){%>
-                                        <li><a href="validerLivraison.jsp?email=<%=email%>">Valider livraison</a></li>
-                                        <%}%>
+                                        <li><a href="editmenu.jsp?email=<%=email%>">Mon Menu</a></li>
                                         <li><a href="#contact">Contacter-nous</a></li>
                                         <li><a href="editprofle.jsp?email=<%=email%>">Profil</a></li>
+                                         <%}%>
+                                        
+                                        <% if(type.equals("livreur")){%>
+                                        <li><a href="livraisons.jsp?email=<%=email%>">Valider livraisons</a></li>
+                                        <li><a href="#contact">Contacter-nous</a></li>
+                                        <li><a href="editprofle.jsp?email=<%=email%>">Profil</a></li><%}%>
+                                        
+                                        
+                                        <% if(type.equals("admin")){%>
+                                        <li><a href="gestionUsers.jsp">Gestion utilisateurs</a></li>
+                                        <li><a href="gestionPub.jsp"> Gestion PUB</a></li>
+                                        <li><a href="gestionCommande.jsp"> Gestion Commandes</a></li>
+                                        <li><a href="editprofle.jsp?email=<%=email%>">Profil</a></li>
+                                        <%}%>
+                                        
                                         <li><a href="home.jsp">Se Deconnecter</a></li>
 
                                         
