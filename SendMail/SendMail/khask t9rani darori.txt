@@ -1,0 +1,2 @@
+il faut ajouter mail.jar dans libraries (clique droite ==> add JAR/FOLDER==> choisi mail.jar)
+;p
