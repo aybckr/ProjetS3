@@ -79,7 +79,7 @@ public class addPlat extends HttpServlet {
     
     String nomplat=request.getParameter("nomplat");
     String email=request.getParameter("email");
-    int monprix =Integer.parseInt(request.getParameter("prix"));
+    int prixPlat =Integer.parseInt(request.getParameter("prix"));
     String query = "insert into plat (idrestau,nomplat,categoryplat,prix) values ("+idrestau+",'"+nomplat+"','dispo',"+prix+")";
     int i = st.executeUpdate(query);
     
